@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E63CA6EC-6CB3-4CB6-9AF1-837D7DC32B54}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DANTAIRE</RootNamespace>
+    <AssemblyName>DANTAIRE</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\..\Desktop\[FTUApps.com] - Guna UI Framework Ultimate v2.0.0.1 + Keygen\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\..\Desktop\[FTUApps.com] - Guna UI Framework Ultimate v2.0.0.1 + Keygen\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMenu.Designer.cs">
+      <DependentUpon>AdminMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AjouterRendezVousPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjouterRendezVousPatient.Designer.cs">
+      <DependentUpon>AjouterRendezVousPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChatAdd\Incoming.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChatAdd\Incoming.Designer.cs">
+      <DependentUpon>Incoming.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChatAdd\OutComing.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChatAdd\OutComing.Designer.cs">
+      <DependentUpon>OutComing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Discussion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Discussion.Designer.cs">
+      <DependentUpon>Discussion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifierPatientnext.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifierPatientnext.Designer.cs">
+      <DependentUpon>ModifierPatientnext.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash.Designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPayment.Designer.cs">
+      <DependentUpon>AddPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OptionParaandDisc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OptionParaandDisc.Designer.cs">
+      <DependentUpon>OptionParaandDisc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuUser.Designer.cs">
+      <DependentUpon>MenuUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AjouterPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjouterPatient.Designer.cs">
+      <DependentUpon>AjouterPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifierPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifierPatient.Designer.cs">
+      <DependentUpon>ModifierPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deletePatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deletePatient.Designer.cs">
+      <DependentUpon>deletePatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowRendezVous.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowRendezVous.Designer.cs">
+      <DependentUpon>ShowRendezVous.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteRendezVous.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteRendezVous.Designer.cs">
+      <DependentUpon>DeleteRendezVous.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowService.Designer.cs">
+      <DependentUpon>ShowService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="messagebox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="messagebox.Designer.cs">
+      <DependentUpon>messagebox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="messageboxyesno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="messageboxyesno.Designer.cs">
+      <DependentUpon>messageboxyesno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TextHight.cs" />
+    <EmbeddedResource Include="AdminMenu.resx">
+      <DependentUpon>AdminMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjouterRendezVousPatient.resx">
+      <DependentUpon>AjouterRendezVousPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChatAdd\Incoming.resx">
+      <DependentUpon>Incoming.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChatAdd\OutComing.resx">
+      <DependentUpon>OutComing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Discussion.resx">
+      <DependentUpon>Discussion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifierPatientnext.resx">
+      <DependentUpon>ModifierPatientnext.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPayment.resx">
+      <DependentUpon>AddPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionParaandDisc.resx">
+      <DependentUpon>OptionParaandDisc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuUser.resx">
+      <DependentUpon>MenuUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjouterPatient.resx">
+      <DependentUpon>AjouterPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifierPatient.resx">
+      <DependentUpon>ModifierPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deletePatient.resx">
+      <DependentUpon>deletePatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowRendezVous.resx">
+      <DependentUpon>ShowRendezVous.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteRendezVous.resx">
+      <DependentUpon>DeleteRendezVous.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowService.resx">
+      <DependentUpon>ShowService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="messagebox.resx">
+      <DependentUpon>messagebox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="messageboxyesno.resx">
+      <DependentUpon>messageboxyesno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\126.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v01-waves-42.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\126-unscreen.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\126-unscreen %281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\my first ofs logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v01-waves-42qqqqqqqqq.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\30-unscreen.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8301.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\83011.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo %281%2911.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dentist-png-hd-dentist-treating-a-patient-960.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usernn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keyn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo 43.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visibility.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visibility %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\updated.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reception.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payment-method.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patient.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reception-bell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patient %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\binocular.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\more.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drop-down-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok-mark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stethoscope.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\job-search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\official-documents.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bar-chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adjust.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximaze.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scale-screen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maps1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\writing.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
